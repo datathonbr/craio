@@ -18,7 +18,7 @@ craio <- function(l){
   ind <- rpois(n = 1, lambda = l)*3 
   
   if(ind <= length(names)){
-    
+    moanr::moanr(l, l)
     full_name <- stringr::str_c("Caio ", stringr::str_to_title(names[ind]))
     print(full_name)
   } 
